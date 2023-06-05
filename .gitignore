@@ -13,7 +13,6 @@ build/
 .gradle/
 gradle-app.setting
 !gradle-wrapper.jar
-build/
 
 local.properties
 
@@ -22,6 +21,7 @@ local.properties
 .idea/
 *.ipr
 *.iws
+target/
 
 # Android Studio Navigation editor temp files
 .navigation/
