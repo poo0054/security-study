@@ -39,10 +39,10 @@ public class SecurityConfig {
                 .antMatchers("/error").permitAll()
                 .antMatchers("/fail").permitAll()
                 // anyRequest() 所有请求   authenticated() 必须被认证
-                .anyRequest().authenticated();
-//				.accessDecisionManager(accessDecisionManager());
+                .anyRequest().authenticated()
+                .accessDecisionManager(accessDecisionManager());
         // 关闭csrf
-        http.csrf().disable();
+        http.csrf();
 
         http.userDetailsService(userDetailsService());
         return http.build();

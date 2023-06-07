@@ -5,13 +5,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author zhangzhi
+ * @author poo00
  */
 @Slf4j
 @SpringBootApplication
-public class SecurityApplication {
-	public static void main(String[] args) {
-		SpringApplication.run(SecurityApplication.class, args);
-		log.info("--------------------------start");
-	}
+public class StarterApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(StarterApplication.class, args);
+        log.info("--------------------------start");
+    }
 }
